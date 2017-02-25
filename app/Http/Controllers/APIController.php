@@ -77,7 +77,7 @@ class APIController extends Controller
         $response["user"]["name"] = $detail["name"];
         $response["user"]["email"] = $detail["email"];
         $response["user"]["permission"] = $detail["permission"];
-        $response["user"]["nip"] = $detail["nip"];
+        $response["user"]["Nip"] = $detail["nip"];
         $response["user"]["created_at"] = $detail["created_at"];
         $response["user"]["detail"]["jabatan"] = $detail["jabatan"];
         $response["user"]["detail"]["golongan"] = $detail["golongan"];

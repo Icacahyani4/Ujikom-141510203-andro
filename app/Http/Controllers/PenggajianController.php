@@ -98,13 +98,13 @@ class PenggajianController extends Controller
                 ->groupBy('pegawai_id')
                 ->first();
                 // dd($jj);
-        if ($jj == null && $jj == 0) {
+        if ($jj == null && $jj->Jumlah_jam == 0) {
             $jq = 0;
         }
-        else{
-            $jq = round($jj);
+        elseif($jj->Jumlah_jam > 0){
+            $jq = $jj->Jumlah_jam;
         }
-        dd($jq);
+        // dd($jq);
 
         $jamlem = round($jq);
         // dd($jamlem);

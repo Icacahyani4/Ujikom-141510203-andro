@@ -50,7 +50,7 @@
 						<td>{{ $data->User->permission }}</td>
 						<td>
 							<center>
-								<img src="{{asset('/img/'.$data->Photo)}}" height="100px" width="100px" class="img-rounded">
+								<img src="{{asset('/image/'.$data->Photo)}}" height="100px" width="100px" class="img-rounded">
 							</center>
 						</td>
 						<td><center><a href="{{ url('pegawai', $data->id) }}" class="btn btn-primary"><span class="icon-eye-open"></span></a></center></td>

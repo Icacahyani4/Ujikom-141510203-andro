@@ -48,11 +48,7 @@
 						<td><?php echo e($data->User->permission); ?></td>
 						<td>
 							<center>
-							<?php if($data->Photo == null): ?>
-								<img src="<?php echo e(asset('/image/default.jpg')); ?>" height="100px" width="100px" class="img-rounded">
-							<?php else: ?>
-								<img src="<?php echo e(asset('/img/'.$data->Photo)); ?>" height="100px" width="100px" class="img-rounded">
-							<?php endif; ?>
+								<img src="<?php echo e(asset('/image/'.$data->Photo)); ?>" height="100px" width="100px" class="img-rounded">
 							</center>
 						</td>
 						<td><center><a href="<?php echo e(url('pegawai', $data->id)); ?>" class="btn btn-primary"><span class="icon-eye-open"></span></a></center></td>
